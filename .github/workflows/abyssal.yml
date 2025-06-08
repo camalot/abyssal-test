@@ -29,7 +29,7 @@ jobs:
       - name: Run Abyssal
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ABYSSAL_TOKEN }}
-          GITHUB_ORGANIZATION: camalot
-          GITHUB_REPOSITORY: abyssal-test
+          GITHUB_ORGANIZATION: ${{ github.repository_owner }}
+          GITHUB_REPOSITORY_NAME: ${{ github.event.repository.name }}
         run: |
           abyssal action --config ${{ github.workspace }}/.github/abyssal/.abyssal.yaml >> "$GITHUB_STEP_SUMMARY"
