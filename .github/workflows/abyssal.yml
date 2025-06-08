@@ -24,4 +24,4 @@ jobs:
 
       - name: Run Abyssal
         run: |
-          abyssal action --config .github/workflows/abyssal/.abyssal.yaml >> "$GITHUB_STEP_SUMMARY"
+          abyssal action --config ${{ github.workspace }}/.github/workflows/abyssal/.abyssal.yaml >> "$GITHUB_STEP_SUMMARY"
