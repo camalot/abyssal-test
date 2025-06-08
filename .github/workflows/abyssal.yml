@@ -23,5 +23,9 @@ jobs:
           abyssal-version: '${{ github.event.inputs.abyssal-version }}'
 
       - name: Run Abyssal
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ORGANIZATION: ${{ github.repository_owner }}
+          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
         run: |
           abyssal action --config ${{ github.workspace }}/.github/abyssal/.abyssal.yaml >> "$GITHUB_STEP_SUMMARY"
