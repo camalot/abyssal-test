@@ -1,6 +1,55 @@
 ---
 sample:
   applications:
+    argocd:
+      enabled: true
+      chartName: "argo-cd"
+      repoURL: "https://argoproj.github.io/argo-helm"
+      targetRevision: "5.43.0"
+      values: {}
+
+    jenkins:
+      enabled: true
+      chartName: "jenkins"
+      repoURL: "https://charts.jenkins.io"
+      targetRevision: "4.3.0"
+      values: {}
+
+    cert-manager:
+      enabled: true
+      chartName: "cert-manager"
+      repoURL: "https://charts.jetstack.io"
+      targetRevision: "v1.14.0"
+      values: {}
+
+    nginx-ingress:
+      enabled: true
+      chartName: "nginx-ingress"
+      repoURL: "https://kubernetes.github.io/ingress-nginx"
+      targetRevision: "4.5.2"
+      values: {}
+
+    grafana:
+      enabled: true
+      chartName: "grafana"
+      repoURL: "https://grafana.github.io/helm-charts"
+      targetRevision: "6.60.0"
+      values: {}
+
+    open-telemetry-stack:
+      enabled: true
+      chartName: "opentelemetry-kube-stack"
+      repoURL: "https://open-telemetry.github.io/opentelemetry-helm-charts"
+      targetRevision: "0.6.1"
+      values: {}
+
+    temporal:
+      enabled: true
+      chartName: "temporal"
+      repoURL: "https://go.temporal.io/helm-charts/"
+      targetRevision: "0.63.0"
+      values: {}
+
     redis:
       enabled: true
       chartName: "redis-cluster"
