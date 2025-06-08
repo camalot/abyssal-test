@@ -24,9 +24,16 @@ sample:
 
     nginx-ingress:
       enabled: true
-      chartName: "nginx-ingress"
+      chartName: "ingress-nginx"
       repoURL: "https://kubernetes.github.io/ingress-nginx"
       targetRevision: "4.5.2"
+      values: {}
+
+    bad-named-chart:
+      enabled: true
+      chartName: "bad-named-chart"
+      repoURL: "https://kubernetes.github.io/ingress-nginx"
+      targetRevision: "1.0.0"
       values: {}
 
     grafana:
