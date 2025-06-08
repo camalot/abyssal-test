@@ -1,0 +1,25 @@
+---
+name: Abyssal CI
+"on":
+  workflow_dispatch:
+    inputs:
+      abyssal-version:
+        description: 'Abyssal version to use'
+        required: false
+        default: '0.1.2'
+  schedule:
+    - cron: 0 0 * * *
+jobs:
+  abyssal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: camalot/abyssal-setup@develop
+        with:
+          abyssal-version: '${{ github.event.inputs.abyssal-version }}'
+
+      - name: Run Abyssal
+        run: |
+          abyssal action --config .github/workflows/abyssal/.abyssal.yaml >> "$GITHUB_STEP_SUMMARY"
