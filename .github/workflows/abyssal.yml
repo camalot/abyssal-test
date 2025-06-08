@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Abyssal
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_ABYSSAL_TOKEN }}
           GITHUB_ORGANIZATION: camalot
           GITHUB_REPOSITORY: abyssal-test
         run: |
