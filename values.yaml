@@ -1,0 +1,44 @@
+---
+sample:
+  applications:
+    redis:
+      enabled: true
+      chartName: "redis-cluster"
+      repoURL: "https://charts.bitnami.com/bitnami "
+      targetRevision: "7.6.4"
+      values: {}
+
+    azureadPodIdentity:
+      enabled: true
+      name: "azuread-pod-identity"
+      chartName: "aad-pod-identity"
+      repoURL: https://raw.githubusercontent.com/Azure/aad-pod-identity/master/charts
+      targetRevision: "4.1.12"
+      values: {}
+
+    consul:
+      enabled: true
+      chartName: "consul"
+      repoURL: "https://helm.releases.hashicorp.com"
+      targetRevision: "1.1.1"
+      values: {}
+
+    vault:
+      enabled: true
+      chartName: "vault"
+      repoURL: "https://helm.releases.hashicorp.com"
+      targetRevision: "0.21.0"
+
+    prometheus-consul-exporter:
+      enabled: true
+      chartName: "prometheus-consul-exporter"
+      repoURL: "https://prometheus-community.github.io/helm-charts"
+      targetRevision: "1.0.0"
+      values: {}
+
+    prometheus-stack:
+      enabled: true
+      chartName: "kube-prometheus-stack"
+      repoURL: "https://prometheus-community.github.io/helm-charts"
+      targetRevision: "45.27.2"
+      values: {}
