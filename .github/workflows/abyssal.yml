@@ -6,7 +6,7 @@ on:
       abyssal-version:
         description: 'Abyssal version to use'
         required: false
-        default: 'v0.1.4'
+        default: 'v0.1.5'
   schedule:
     - cron: 0 0 * * *
 
