@@ -91,3 +91,17 @@ sample:
       repoURL: "https://prometheus-community.github.io/helm-charts"
       targetRevision: "45.27.2"
       values: {}
+
+    fluent-bit:
+      enabled: true
+      chartName: "fluent-bit"
+      repoURL: "https://fluent.github.io/helm-charts"
+      targetRevision: "57.71.98" # version that is WAY beyond the current latest
+      values: {}
+
+    kube-cost-analyzer:
+      enabled: true
+      chartName: "cost-analyzer"
+      repoURL: "https://kubecost.github.io/cost-analyzer/"
+      targetRevision: "2.8.0-rc.4"
+      values: {}
