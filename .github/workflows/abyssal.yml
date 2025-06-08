@@ -1,6 +1,6 @@
 ---
 name: Abyssal CI
-"on":
+on:
   workflow_dispatch:
     inputs:
       abyssal-version:
@@ -9,6 +9,8 @@ name: Abyssal CI
         default: '0.1.2'
   schedule:
     - cron: 0 0 * * *
+
+permissions: {}
 jobs:
   abyssal:
     runs-on: ubuntu-latest
