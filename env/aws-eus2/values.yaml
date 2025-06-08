@@ -1,0 +1,37 @@
+---
+sample:
+  applications:
+    minecraft:
+      enabled: true
+      chartName: minecraft
+      repoURL: https://itzg.github.io/minecraft-server-charts/
+      targetRevision: '4.26.3'
+      values: {}
+
+    minecraft-bedrock:
+      enabled: true
+      chartName: minecraft-bedrock
+      repoURL: https://itzg.github.io/minecraft-server-charts/
+      targetRevision: '2.8.4'
+      values: {}
+
+    minecraft-proxy:
+      enabled: true
+      chartName: minecraft-proxy
+      repoURL: https://itzg.github.io/minecraft-server-charts/
+      targetRevision: '3.8.1'
+      values: {}
+
+    rcon-web-admin:
+      enabled: true
+      chartName: rcon-web-admin
+      repoURL: https://itzg.github.io/minecraft-server-charts/
+      targetRevision: '1.1.0'
+      values: {}
+
+    mc-router:
+      enabled: true
+      chartName: mc-router
+      repoURL: https://itzg.github.io/minecraft-server-charts/
+      targetRevision: '1.3.0'
+      values: {}
