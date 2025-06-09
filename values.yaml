@@ -5,7 +5,7 @@ sample:
       enabled: true
       chartName: "argo-cd"
       repoURL: "https://argoproj.github.io/argo-helm"
-      targetRevision: "5.43.0"
+      targetRevision: "8.0.16"
       values: {}
 
     jenkins:
@@ -26,7 +26,7 @@ sample:
       enabled: true
       chartName: "ingress-nginx"
       repoURL: "https://kubernetes.github.io/ingress-nginx"
-      targetRevision: "4.5.2"
+      targetRevision: "4.12.3"
       values: {}
 
     bad-named-chart:
@@ -40,7 +40,7 @@ sample:
       enabled: true
       chartName: "grafana"
       repoURL: "https://grafana.github.io/helm-charts"
-      targetRevision: "6.60.0"
+      targetRevision: "9.2.2"
       values: {}
 
     open-telemetry-stack:
@@ -61,7 +61,7 @@ sample:
       enabled: true
       chartName: "redis-cluster"
       repoURL: "https://charts.bitnami.com/bitnami "
-      targetRevision: "7.6.4"
+      targetRevision: "12.0.9"
       values: {}
 
     azureadPodIdentity:
@@ -69,21 +69,21 @@ sample:
       name: "azuread-pod-identity"
       chartName: "aad-pod-identity"
       repoURL: https://raw.githubusercontent.com/Azure/aad-pod-identity/master/charts
-      targetRevision: "4.1.12"
+      targetRevision: "4.1.18"
       values: {}
 
     consul:
       enabled: true
       chartName: "consul"
       repoURL: "https://helm.releases.hashicorp.com"
-      targetRevision: "1.1.1"
+      targetRevision: "1.7.1"
       values: {}
 
     vault:
       enabled: true
       chartName: "vault"
       repoURL: "https://helm.releases.hashicorp.com"
-      targetRevision: "0.21.0"
+      targetRevision: "0.30.0"
 
     prometheus-consul-exporter:
       enabled: true
@@ -96,7 +96,7 @@ sample:
       enabled: true
       chartName: "kube-prometheus-stack"
       repoURL: "https://prometheus-community.github.io/helm-charts"
-      targetRevision: "45.27.2"
+      targetRevision: "73.2.0"
       values: {}
 
     fluent-bit:
