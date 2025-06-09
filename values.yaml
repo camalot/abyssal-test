@@ -61,7 +61,7 @@ sample:
       enabled: true
       chartName: "redis-cluster"
       repoURL: "https://charts.bitnami.com/bitnami "
-      targetRevision: "12.0.8"
+      targetRevision: "12.0.9"
       values: {}
 
     azureadPodIdentity:
